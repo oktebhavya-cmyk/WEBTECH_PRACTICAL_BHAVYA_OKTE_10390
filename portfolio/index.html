@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhavya Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(120deg,#021217ab,#0f172a);
+color:#e7e5eb;
+}
+:root{
+--glass:rgba(255,255,255,0.08);
+--accent:#7238f8;
+--radius:18px;
+--shadow:0 25px 60px rgba(0,0,0,.35);
+}
+.glass{
+background:var(--glass);
+backdrop-filter:blur(20px);
+border-radius:var(--radius);
+border:1px solid rgba(255,255,255,.15);
+box-shadow:var(--shadow);
+}
+header{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:90%;
+z-index:999;
+}
+nav{
+padding:18px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+nav ul li a{
+text-decoration:none;
+color:inherit;
+}
+nav ul li:hover{color:var(--accent);}
+section{padding:100px 8%;}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+.hero h1{font-size:3rem;}
+.hero span{color:var(--accent);}
+.title{
+text-align:center;
+font-size:2.4rem;
+margin-bottom:60px;
+}
+.photo-box{
+max-width:420px;
+margin:auto;
+text-align:center;
+padding:0px;
+}
+.photo-box img{
+width:280px;
+height:280px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid var(--accent);
+}
+.skills,.projects,.certificates,.socials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+.skill,.project,.certificate,.social{
+padding:25px;
+text-align:center;
+}
+.certificate img{
+width:100%;
+border-radius:12px;
+margin-top:15px;
+transition:.4s;
+}
+.certificate img:hover{transform:scale(1.05);}
+.social a{
+font-size:2.5rem;
+color:var(--accent);
+transition:.3s;
+}
+.social a:hover{color:#fff;}
+form{
+max-width:600px;
+margin:auto;
+display:grid;
+gap:20px;
+}
+input,textarea,button{
+padding:15px;
+border-radius:12px;
+border:none;
+font-family:Poppins;
+}
+button{
+background:var(--accent);
+cursor:pointer;
+}
+footer{
+text-align:center;
+padding:40px;
+opacity:.7;
+}
+@media(max-width:900px){
+nav ul{display:none;}
+}
+</style>
+</head>
+
+<body>
+
+<header class="glass">
+<nav>
+<h3> BHAVYA PORTFOLIO</h3>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#photo">Photo</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div data-aos="zoom-in">
+<h1>Hello, I'm <span>Bhavya</span></h1>
+<p>C Programmer | Web Developer</p>
+</div>
+</section>
+
+<!-- PHOTO SECTION -->
+<section id="photo">
+<h2 class="title" data-aos="fade-up">Profile Photo</h2>
+<div class="glass photo-box" data-aos="zoom-in">
+<img src="C:\Users\okteb\Documents\bhavya image.jpg" alt="Profile Photo">
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2 class="title" data-aos="fade-up">Skills</h2>
+<div class="skills">
+<div class="skill glass" data-aos="zoom-in">C Programming</div>
+<div class="skill glass" data-aos="zoom-in">HTML</div>
+<div class="skill glass" data-aos="zoom-in">CSS</div>
+<div class="skill glass" data-aos="zoom-in">JavaScript</div>
+<div class="skill glass" data-aos="zoom-in">Communication</div>
+<div class="skill glass" data-aos="zoom-in">Time Management</div>
+<div class="skill glass" data-aos="zoom-in">Problem Solving</div>
+<div class="skill glass" data-aos="zoom-in">Teamwork & collaboration</div>
+</div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+<h2 class="title" data-aos="fade-up">Certificates</h2>
+<div class="certificates">
+
+<div class="certificate glass" data-aos="zoom-in">
+<h3>C Programming</h3>
+<img src="C:\Users\okteb\Documents\certificate c.jpg">
+</div>
+
+<div class="certificate glass" data-aos="zoom-in">
+<h3>Web Technology</h3>
+<img src="C:\Users\okteb\Documents\certificate web.jpg">
+</div>
+
+</div>
+</section>
+
+<!-- SOCIAL LINKS -->
+<section id="social">
+<h2 class="title" data-aos="fade-up">Social Media</h2>
+<div class="socials">
+
+<div class="social glass" data-aos="zoom-in">
+<a href="https://www.linkedin.com/in/bhavya-okte-3360b9399?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+<p>LinkedIn</p>
+</div>
+
+<div class="social glass" data-aos="zoom-in">
+<a href="https://github.com/oktebhavya-cmyk" target="_blank"><i class="fab fa-github"></i></a>
+<p>GitHub</p>
+</div>
+
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="title" data-aos="fade-up">Contact Me</h2>
+<form class="glass" data-aos="zoom-in">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>© 2026 Bhavya Portfolio</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration:1000});</script>
+
+</body>
+</html>
